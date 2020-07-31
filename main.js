@@ -11,6 +11,42 @@ q.innerText = testimonials[index].testimonial;
 document.getElementById('testimonial').append(q);
 
 //Random user images and names
+function append(parent, el) {
+    return parent.appendChild(el);
+}
+
+const userURL = 'https://randomuser.me/api/';
+const span = document.getElementById('rndUser');
+let bigUsers;
+
+fetch(userURL)
+    .then(resp => resp.json())
+    .then(data => {
+        bigUsers = data.results;
+        console.log(bigUsers)
+
+        bigUsers.map(user => {
+            let h1 = document.createElement('h1'),
+                img = document.createElement('img');
+
+            img.src = user.picture.large;
+            h1.innerText = `${user.name.first} ${user.name.last}`;
+
+            append(span, img);
+            append(span, h1);
+        })
+    })
+
+//Change Submit button text
+document.getElementById("submitBtn").addEventListener("click", () => {
+    document.getElementById("submitBtn").innerHTML = "Submitted!";
+    setTimeout(function(){ document.getElementById("submitBtn").innerHTML = "Submit" }, 5000);
+});
+
+
+
+//Working, just in case
+/*
 function createNode(element) {
     return document.createElement(element);
 }
@@ -38,36 +74,6 @@ fetch(userURL)
 
             append(span, img);
             append(span, h1);
-        })
-    })
-
-    //Change Submit button text
-    document.getElementById("submitBtn").addEventListener("click", () => {
-        document.getElementById("submitBtn").innerHTML = "Submitted!";
-        setTimeout(function(){ document.getElementById("submitBtn").innerHTML = "Submit" }, 5000);
-    });
-
-
-
-//Working, just in case
-/*
-    fetch(userURL)
-    .then(resp => resp.json())
-    .then(data => {
-        bigUsers = data.results;
-        console.log(bigUsers)
-
-        bigUsers.map(user => {
-            let li = createNode('li'),
-                img = createNode('img'),
-                span = createNode('span');
-
-            img.src = user.picture.large;
-            span.innerText = `${user.name.first} ${user.name.first}`;
-
-            append(li, img);
-            append(li, span);
-            append(ul, li);
         })
     })
 */
