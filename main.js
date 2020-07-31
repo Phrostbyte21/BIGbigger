@@ -36,8 +36,8 @@ fetch(userURL)
             img.src = user.picture.large;
             h1.innerText = `${user.name.first} ${user.name.first}`;
 
-            append(h1, img);
-            append(span, h1);
+            append(img, h1);
+            append(span, img);
         })
     })
 
