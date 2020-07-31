@@ -31,7 +31,7 @@ fetch(userURL)
 
         bigUsers.map(user => {
             let h1 = createNode('h1'),
-                img = createNode('img'),
+                img = createNode('img');
 
             img.src = user.picture.large;
             h1.innerText = `${user.name.first} ${user.name.first}`;
