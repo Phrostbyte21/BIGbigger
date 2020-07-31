@@ -153,6 +153,7 @@ button {
     border: none;
     border-radius: 10px;
     transition: .3s;
+    width: 150px;
 }
 
 button:hover {
