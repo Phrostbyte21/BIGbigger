@@ -20,7 +20,7 @@ function append(parent, el) {
 }
 
 const userURL = 'https://randomuser.me/api/';
-const div = document.getElementById('rndUser');
+const span = document.getElementById('rndUser');
 let bigUsers;
 
 fetch(userURL)
@@ -36,6 +36,6 @@ fetch(userURL)
         h1.innerText = `${bigUsers[0].name.first} ${bigUsers[0].name.last}`;
     
         append(h1, img);
-        append(h1, div);
+        append(h1, span);
 
     })
