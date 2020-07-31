@@ -21,7 +21,7 @@ function append(parent, el) {
 
 const userURL = 'https://randomuser.me/api/';
 const div = document.getElementById('rndUser');
-let = bigUsers;
+let bigUsers;
 
 fetch(userURL)
     .then(resp => resp.json())
