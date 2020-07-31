@@ -14,18 +14,13 @@ function first(array, count = 1) {
     return array.slice(0, count);
 }
 
-const testRndNum = Math.floor(Math.random() * (10/*max*/ - 1/*min*/ + 1)) + 1;
+// Generates random number between 1 and 10.
+const testRndNum = Math.floor(Math.random() * (/*max*/10 - /*min*/1 + 1)) + /*min*/1;
 console.log(testRndNum);
 
 const testimonialQuote = document.getElementById('testimonial');
 
 
 first(testimonials).map(person => {
-    let li = createNode('li'),
-        span = createNode('span');
-
     span.innerText = `${person.testimonial}`;
-
-    append(li, span);
-    append(testimonialQuote, li);
 })
