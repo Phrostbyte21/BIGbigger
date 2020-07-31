@@ -34,8 +34,8 @@ fetch(userURL)
                 img = createNode('img'),
                 span = createNode('span');
 
-            img.src = bigUsers[0].picture.large;
-            span.innerText = `${bigUser[0].name.first} ${bigUser[0].name.first}`;
+            img.src = user.picture.large;
+            span.innerText = `${user.name.first} ${user.name.first}`;
 
             append(li, img);
             append(li, span);
