@@ -20,7 +20,7 @@ function append(parent, el) {
 }
 
 const userURL = 'https://randomuser.me/api/';
-const span = document.getElementById('rndUser');
+const ul = document.getElementById('rndUser');
 let bigUsers;
 
 fetch(userURL)
