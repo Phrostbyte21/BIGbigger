@@ -14,15 +14,15 @@ function first(array, count = 10) {
     return array.slice(0, count);
 }
 
-const peopleul = document.getElementById('testimonial');
+const testimonialQuote = document.getElementById('testimonial');
 
 
-first(people).map(person => {
+first(testimonials).map(person => {
     let li = createNode('li'),
         span = createNode('span');
 
     span.innerText = `${person.testimonial}`;
 
     append(li, span);
-    append(peopleul, li);
+    append(testimonialQuote, li);
 })
