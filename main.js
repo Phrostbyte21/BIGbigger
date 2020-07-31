@@ -10,7 +10,7 @@ function append(parent, el) {
 }
 
 function first(array, count = 1) {
-    raturn array.slice(0, count);
+    return array.slice(0, count);
 }
 
 const testimonial = document.getElementById('testimonial');
