@@ -29,10 +29,8 @@ fetch(userURL)
         bigUsers = data.results;
         console.log(bigUsers)
 
-        bigUsers.map(user => {
-
-        let h1 = createNode(h1),
-            img = createNode(img);
+        let h1 = createNode('h1'),
+            img = createNode('img');
     
         img.src = bigUsers[0].picture.large;
         h1.innerText = `${bigUsers.name.first} ${bigUsers.name.first}`;
@@ -40,5 +38,4 @@ fetch(userURL)
         append(h1, img);
         append(h1, div);
 
-        })
     })
