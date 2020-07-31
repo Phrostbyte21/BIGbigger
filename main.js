@@ -28,13 +28,17 @@ fetch(userURL)
     .then(data => {
         bigUsers = data.results;
         console.log(bigUsers)
+
+        bigUsers.map(user => {
+
+        let h1 = createNode(h1),
+            img = createNode(img);
+    
+        img.src = bigUsers[0].picture.large;
+        h1.innerText = `${bigUsers.name.first} ${bigUsers.name.first}`;
+    
+        append(h1, img);
+        append(h1, div);
+
+        })
     })
-
-    let h1 = createNode(h1),
-        img = createNode(img);
-
-    img.src = bigUsers[0].picture.large;
-    h1.innerText = `${bigUsers.name.first} ${bigUsers.name.first}`;
-
-    append(h1, img);
-    append(h1, div);
