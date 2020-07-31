@@ -29,5 +29,5 @@ first(testimonials).map(person => {
 
     q.innerText = testimonials[testRndNum];
 
-    append(testimonial, q);
+    append(testimonialQuote, q);
 })
