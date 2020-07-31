@@ -28,8 +28,8 @@ fetch(userURL)
             img.src = user.picture.large;
             h1.innerText = `${user.name.first} ${user.name.last}`;
 
-            appendChild(span, img);
-            appendChild(span, h1);
+            span.appendChild(img);
+            span.appendChild(h1);
         })
     })
 
