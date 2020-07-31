@@ -21,20 +21,20 @@ function append(parent, el) {
 
 const userURL = 'https://randomuser.me/api/';
 const div = document.getElementById('rndUser');
-let = users;
+let = bigUsers;
 
 fetch(userURL)
     .then(resp => resp.json())
     .then(data => {
-        users = data.results;
-        console.log(users)
+        bigUsers = data.results;
+        console.log(bigUsers)
     })
 
     let h1 = createNode(h1),
         img = createNode(img);
 
-    img.src = users[0].picture.large;
-    h1.innerText = `${users.name.first} ${users.name.first}`;
+    img.src = bigUsers[0].picture.large;
+    h1.innerText = `${bigUsers.name.first} ${bigUsers.name.first}`;
 
     append(h1, img);
     append(h1, div);
