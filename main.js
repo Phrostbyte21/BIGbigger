@@ -10,9 +10,12 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-function first(array, count = 10) {
+function first(array, count = 1) {
     return array.slice(0, count);
 }
+
+const testRndNum = Math.floor(Math.random() * (10/*max*/ - 1/*min*/ + 1)) + 1;
+console.log(testRndNum);
 
 const testimonialQuote = document.getElementById('testimonial');
 
