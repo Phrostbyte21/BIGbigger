@@ -37,4 +37,4 @@ fetch(userURL)
     h1.innerText = `${users.name.first} ${users.name.first}`;
 
     append(h1, img);
-    append(h1, div)
+    append(h1, div);
