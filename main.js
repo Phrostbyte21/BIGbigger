@@ -20,10 +20,33 @@ function append(parent, el) {
 }
 
 const userURL = 'https://randomuser.me/api/';
-const ul = document.getElementById('rndUser');
+const span = document.getElementById('rndUser');
 let bigUsers;
 
 fetch(userURL)
+    .then(resp => resp.json())
+    .then(data => {
+        bigUsers = data.results;
+        console.log(bigUsers)
+
+        bigUsers.map(user => {
+            let h1 = createNode('h1'),
+                img = createNode('img'),
+
+            img.src = user.picture.large;
+            h1.innerText = `${user.name.first} ${user.name.first}`;
+
+            append(h1, img);
+            append(span, h1);
+        })
+    })
+
+
+
+
+//Working, just in case
+/*
+    fetch(userURL)
     .then(resp => resp.json())
     .then(data => {
         bigUsers = data.results;
@@ -42,23 +65,4 @@ fetch(userURL)
             append(ul, li);
         })
     })
-
-
-
-
-// fetch(userURL)
-//     .then(resp => resp.json())
-//     .then(data => {
-//         bigUsers = data.results;
-//         console.log(bigUsers)
-
-//         let h1 = createNode('h1'),
-//             img = createNode('img');
-    
-//         img.src = bigUsers[0].picture.large;
-//         h1.innerText = `${bigUsers[0].name.first} ${bigUsers[0].name.last}`;
-    
-//         append(h1, img);
-//         append(h1, span);
-
-//     })
+*/
