@@ -25,7 +25,7 @@ const testimonialQuote = document.getElementById('testimonial');
 first(testimonials).map(person => {
     let q = createNode('q')
 
-    q.innerText = `${person.testimonial}`;
+    q.innerText = `${person.testimonial[testRndNum]}`;
 
     append(testimonial, q);
 })
