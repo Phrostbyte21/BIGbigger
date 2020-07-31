@@ -33,7 +33,7 @@ fetch(userURL)
             img = createNode('img');
     
         img.src = bigUsers[0].picture.large;
-        h1.innerText = `${bigUsers.name.first} ${bigUsers.name.last}`;
+        h1.innerText = `${bigUsers[0].name.first} ${bigUsers[0].name.last}`;
     
         append(h1, img);
         append(h1, div);
