@@ -110,3 +110,66 @@ img {
     flex-direction: column;
     align-items: center;
 }
+
+input {
+    height: 26px;
+    border: none;
+    border-radius: 10px;
+    padding: 0% 2%;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+textarea {
+    border: none;
+    border-radius: 10px;
+    padding: 1% 2%;
+    width: 100%;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+
+}
+
+.ideaFields {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#idea {
+    min-height: 100px;
+}
+
+button {
+    padding: 12px 35px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: rgba(230,250,255,1);
+}
+
+button:focus {
+    outline: none;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

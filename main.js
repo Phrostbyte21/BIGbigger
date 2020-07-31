@@ -41,6 +41,11 @@ fetch(userURL)
         })
     })
 
+    //Change Submit button text
+    document.getElementById("submitBtn").addEventListener("click", () => {
+        document.getElementById("submitBtn").innerHTML = "Submitted!";
+        setTimeout(function(){ document.getElementById("submitBtn").innerHTML = "Submit" }, 5000);
+    });
 
 
 
