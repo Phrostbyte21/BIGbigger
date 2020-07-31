@@ -29,13 +29,36 @@ fetch(userURL)
         bigUsers = data.results;
         console.log(bigUsers)
 
-        let h1 = createNode('h1'),
-            img = createNode('img');
-    
-        img.src = bigUsers[0].picture.large;
-        h1.innerText = `${bigUsers[0].name.first} ${bigUsers[0].name.last}`;
-    
-        append(h1, img);
-        append(h1, span);
+        bigUsers.map(user => {
+            let li = createNode('li'),
+                img = createNode('img'),
+                span = createNode('span');
 
+            img.src = bigUsers.picture.medium;
+            span.innerText = `${bigUser.name.first} ${bigUser.name.first}`;
+
+            append(li, img);
+            append(li, span);
+            append(ul, li);
+        })
     })
+
+
+
+
+// fetch(userURL)
+//     .then(resp => resp.json())
+//     .then(data => {
+//         bigUsers = data.results;
+//         console.log(bigUsers)
+
+//         let h1 = createNode('h1'),
+//             img = createNode('img');
+    
+//         img.src = bigUsers[0].picture.large;
+//         h1.innerText = `${bigUsers[0].name.first} ${bigUsers[0].name.last}`;
+    
+//         append(h1, img);
+//         append(h1, span);
+
+//     })
