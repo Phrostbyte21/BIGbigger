@@ -100,7 +100,7 @@ img {
 .testimonials h1 {
     margin: 0;
 }
-q {
+#testimonial {
     width: 50%;
     margin-bottom: 40px ;
 }
