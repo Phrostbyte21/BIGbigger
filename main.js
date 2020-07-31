@@ -11,10 +11,6 @@ q.innerText = testimonials[index].testimonial;
 document.getElementById('testimonial').append(q);
 
 //Random user images and names
-function append(parent, el) {
-    return parent.appendChild(el);
-}
-
 const userURL = 'https://randomuser.me/api/';
 const span = document.getElementById('rndUser');
 let bigUsers;
@@ -32,8 +28,8 @@ fetch(userURL)
             img.src = user.picture.large;
             h1.innerText = `${user.name.first} ${user.name.last}`;
 
-            append(span, img);
-            append(span, h1);
+            appendChild(span, img);
+            appendChild(span, h1);
         })
     })
 
