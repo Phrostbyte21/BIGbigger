@@ -23,6 +23,8 @@ const testimonialQuote = document.getElementById('testimonial');
 
 first(testimonials).map(person => {
     let q = createNode('q')
-    
+
     q.innerText = `${person.testimonial}`;
+
+    append(testimonial, q);
 })
