@@ -9,14 +9,15 @@ function createNode(element) {
 function append(parent, el) {
     return parent.appendChild(el);
 }
-
-function first(array, count = 1) {
-    return array.slice(0, count);
-}
-
 // Generates random number between 1 and 10.
 const testRndNum = Math.floor(Math.random() * (/*max*/10 - /*min*/1 + 1)) + /*min*/1;
 console.log(testRndNum);
+
+function first(array, count = 1) {
+    return array.slice(testRndNum, count);
+}
+
+
 
 const testimonialQuote = document.getElementById('testimonial');
 
