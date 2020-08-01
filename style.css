@@ -5,7 +5,6 @@ html {
 body {
     margin: 0px;
     background: linear-gradient(145deg, rgba(73,194,239,1) 0%, rgba(17,122,180,1) 100%);
-    /* background: linear-gradient(145deg, rgba(178,234,255,1) 0%, rgba(68,216,255,1) 100%); */
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
 }
@@ -127,7 +126,7 @@ input:focus {
 textarea {
     border: none;
     border-radius: 10px;
-    padding: 1% 2%;
+    padding: 5px 8px;
     width: 100%;
     resize: vertical;
 }
@@ -173,4 +172,75 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.mobileMenu {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        font-size: .6rem;
+    }
+    .logo {
+        border: 2px solid white;
+        padding: 5px;
+        width: 75px;
+        border-radius: 14px;
+    }
+    .sectionHeader {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mobileMenu {
+        visibility: hidden;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header {
+        font-size: .6rem;
+        height: 60px;
+    }
+    .nav {
+        justify-content: space-around;
+        height: 60px;
+    }
+    .logo {
+        border: 2px solid white;
+        padding: 5px;
+        width: 75px;
+        border-radius: 14px;
+    }
+    .sectionHeader {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .navItems {
+        visibility: hidden;
+    }
+    .mobileMenu {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        visibility: visible;
+        right: 20px;
+        top: 15px;
+    }
+    input {
+        width: 96%;
+    }
+    textarea {
+        width: 96%;
+    }
+    .ideaForm {
+        text-align: left;
+    }
 }
