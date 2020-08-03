@@ -179,6 +179,20 @@ input[type=number] {
     position: absolute;
 }
 
+.loadingOverlay {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    transition: .5s;
+}
+
+.loadingOverlayDone {
+    opacity: 0;
+    transition: 1s;
+}
+
 /* Tablet */
 @media (min-width: 481px) and (max-width: 768px) {
     header {
