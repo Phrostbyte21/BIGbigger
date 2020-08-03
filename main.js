@@ -1,5 +1,6 @@
 //Import Testimonials API
 import { testimonials } from './testimonials.js'
+import { business } from './business.js'
 
 // Create variable with random length based on API entries
 // then print the selected testimonial to HTML
