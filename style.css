@@ -190,8 +190,7 @@ input[type=number] {
 
 .loadingOverlayDone {
     opacity: 0;
-    transition-delay: 5s;
-    transition: 1s;
+    transition: 2s;
 }
 
 /* Tablet */
