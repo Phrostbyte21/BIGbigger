@@ -190,6 +190,7 @@ input[type=number] {
 
 .loadingOverlayDone {
     opacity: 0;
+    transition-delay: 1s;
     transition: 1s;
 }
 

@@ -41,5 +41,4 @@ document.getElementById("submitBtn").addEventListener("click", () => {
 
 // Fade in website
 var overlay = document.getElementById("siteOverlay");
-    await sleep(1000);
     overlay.classList.add("loadingOverlayDone");
