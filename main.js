@@ -38,7 +38,3 @@ document.getElementById("submitBtn").addEventListener("click", () => {
     document.getElementById("submitBtn").innerHTML = "Submitted!";
     setTimeout(function(){ document.getElementById("submitBtn").innerHTML = "Submit" }, 5000);
 });
-
-// Fade in website
-var overlay = document.getElementById("siteOverlay");
-    overlay.classList.add("loadingOverlayDone");
