@@ -39,7 +39,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
     setTimeout(function(){ document.getElementById("submitBtn").innerHTML = "Submit" }, 5000);
 });
 
-// Face in website
+// Fade in website
 var overlay = document.getElementById("siteOverlay");
     await sleep(1000);
     overlay.classList.add("loadingOverlayDone");
