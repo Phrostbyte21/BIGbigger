@@ -114,7 +114,7 @@ first(business).map(person => {
 //Generates a new company testimonial
 const newTest = document.getElementById('newTestinomial');
 
-allToggle.addEventListener('click', () => {
+newTest.addEventListener('click', () => {
     const index = Math.floor(Math.random() * testimonials.length);
 
     const q = document.createElement('q');
