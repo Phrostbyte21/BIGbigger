@@ -317,6 +317,15 @@ input[type=number] {
         user-select: none;
     }
     #mobileMenu h2:hover {
-        color: rgb(73,194,239)
+        color: rgb(73,194,239);
+    }
+    #mobileMenu a {
+        color: rgb(17,122,180);
+    }
+    #mobileMenu a:hover {
+        color: rgb(73,194,239);
+    }
+    #mobileMenu a:visited {
+        color: rgb(17,122,180);
     }
 }
