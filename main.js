@@ -62,7 +62,7 @@ let isFood = true;
 
 foodToggle.addEventListener('click', () => {
     isFood = !isFood
-    h4.innerText = '';
+    businessDiv.innerText = '';
     
     business.filter(person => {
         return isFood ? person.founded == '2018' : person.founded == '2017'
