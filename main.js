@@ -61,6 +61,13 @@ const technologyToggle = document.getElementById('technology');
 let isFood = true;
 let isTechnology = true;
 
+// All Toggle Button
+foodToggle.addEventListener('click', () => {
+    businessDiv.innerText = '';
+    first(business).map(person => {
+        createBusiness(person);
+    })
+})
 // Food Toggle Button
 foodToggle.addEventListener('click', () => {
     isFood = !isFood
