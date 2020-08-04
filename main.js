@@ -35,7 +35,7 @@ fetch(userURL)
     })
 
 // Pulling in business names and printing HTML
-document.getElementById('companies').append(li);
+const li = document.createElement('li');
 
 first(business).map(company => {
         let li = document.createElement('li'),
