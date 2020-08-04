@@ -35,21 +35,29 @@ fetch(userURL)
     })
 
 // Pulling in business names and printing HTML
+function createNode(element) {
+    return document.createElement(element);
+}
+
+function append(parent, el) {
+    return parent.appendChild(el);
+}
+
 function first(array, count = 10) {
     return array.slice(0, count);
 }
 
-const companiesul = document.getElementById('companies');
+const businessul = document.getElementById('companies');
 
-first(business).map(singleComp => {
-    let li = document.createElement('li'),
-        span = document.createElement('span');
+first(business).map(person => {
+    let li = createNode('li'),
+        span = createNode('span');
+        console.log(business.name);
 
     span.innerText = `${business.name}`;
 
-    span.appendChild(li);
-    span.appendChild(companiesul);
-    console.log(business.name);
+    append(li, span);
+    append(businessul, li);
 })
 
 
