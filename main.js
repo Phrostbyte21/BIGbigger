@@ -37,13 +37,16 @@ fetch(userURL)
 // Pulling in business names and printing HTML
 const indexTwo = Math.floor(Math.random() * business.length);
 const li = document.createElement('li');
+let businesses;
 
-indexTwo + 5;
+businesses.map(business => {
+    li.innerText = business[indexTwo].name;
+    console.log(business[indexTwo].name);
 
-li.innerText = business[indexTwo].name;
-console.log(business[indexTwo].name);
+    document.getElementById('companies').append(li);
+})
 
-document.getElementById('companies').append(li);
+
 
 
 // Change Submit button text
