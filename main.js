@@ -13,7 +13,7 @@ q.innerText = testimonials[index].testimonial;
 document.getElementById('testimonial').append(q);
 
 // Open/Close mobile menu
-function mobileMenu() {
+function menu() {
     var x = document.getElementById("mobileMenu");
     if (x.style.display === "flex") {
       x.style.display = "none";
