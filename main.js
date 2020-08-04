@@ -48,7 +48,7 @@ first(business).map(singleComp => {
     span.innerText = `${business.name}`;
 
     span.appendChild(li);
-    span.(companiesul);
+    span.appendChild(companiesul);
     console.log(business.name);
 })
 
