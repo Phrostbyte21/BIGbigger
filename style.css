@@ -282,7 +282,7 @@ input[type=number] {
         visibility: hidden;
     }
     .mobileMenu {
-        display: flex;
+        display: flex!important;
         align-items: center;
         font-size: 2rem;
     }
