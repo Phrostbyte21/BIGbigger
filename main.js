@@ -67,7 +67,7 @@ foodToggle.addEventListener('click', () => {
     
     business.filter(person => {
         if (person.types[0] == 'food') {
-            return person.types[0];
+            return person.name;
         }
     })
     .map(person => {
