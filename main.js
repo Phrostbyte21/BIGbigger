@@ -49,7 +49,7 @@ first(business).map(singleComp => {
 
     span.appendChild(li);
     span.appendChild(companiesul);
-    console.log(business[array].name);
+    console.log(business.name);
 })
 
 
