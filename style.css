@@ -210,11 +210,14 @@ input[type=number] {
 
 .testNext {
     position: absolute;
-    right: 0.5%;
+    right: 15%;
+    transform: scaleY(3) scaleX(2.5);
     transition: .3s;
+    padding: 5px;
 }
 
 .testNext:hover {
+    background-color: rgba(0, 0, 0, .05);
     transition: .3s;
 }
 /* -------------------------------------------------------- */
