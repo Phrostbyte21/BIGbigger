@@ -217,6 +217,9 @@ input[type=number] {
 .mobileMenu {
     display: none;
 }
+#mobileMenu {
+    display: none;
+}
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
 /* -------------------------------------------------------- */
@@ -243,6 +246,9 @@ input[type=number] {
         right: 5%;
     }
     .mobileMenu {
+        display: none;
+    }
+    #mobileMenu {
         display: none;
     }
 }
