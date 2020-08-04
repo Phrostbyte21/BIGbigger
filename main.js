@@ -66,7 +66,7 @@ foodToggle.addEventListener('click', () => {
     businessDiv.innerText = '';
     
     business.filter(person => {
-        return isFood ? person.founded == '2018' : person.founded == '2017'
+        return isFood ? person.types == 'food' : person.types == 'technology'
     })
     .map(person => {
         createBusiness(person);
@@ -79,38 +79,8 @@ first(business).map(person => {
 })
 
 
-
-
 // Change Submit button text
 document.getElementById("submitBtn").addEventListener("click", () => {
     document.getElementById("submitBtn").innerHTML = "Submitted!";
     setTimeout(function(){ document.getElementById("submitBtn").innerHTML = "Submit" }, 5000);
 });
-
-
-
-
-
-// // Pulling in business names and printing HTML
-// function createNode(element) {
-//     return document.createElement(element);
-// }
-
-// function append(parent, el) {
-//     return parent.appendChild(el);
-// }
-
-// function first(array, count = 10) {
-//     return array.slice(0, count);
-// }
-
-// const businessDiv = document.getElementById('companies');
-
-// first(business).map(person => {
-//     let h4 = createNode('h4');
-//         console.log(person.name);
-
-//     h4.innerText = `${person.name}`;
-
-//     append(businessDiv, h4);
-// })
