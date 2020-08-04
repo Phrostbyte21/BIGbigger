@@ -35,11 +35,12 @@ fetch(userURL)
     })
 
 // Pulling in business names and printing HTML
+const indexTwo = Math.floor(Math.random() * business.length);
 const li = document.createElement('li');
 
-li.innerText = business.name;
-console.log(business.name);
-console.log(business.founded);
+li.innerText = business[indexTwo].name;
+console.log(business[indexTwo].name);
+console.log(business[indexTwo].founded);
 
 document.getElementById('companies').append(li);
 
