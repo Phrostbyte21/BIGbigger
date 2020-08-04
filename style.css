@@ -176,7 +176,7 @@ input[type=number] {
 }
 
 .mobileMenu {
-    display: none;
+    display: none !imporant;
 }
 
 #companies {
@@ -219,7 +219,7 @@ input[type=number] {
     transition: .3s;
 }
 #mobileMenu {
-    display: none;
+    display: none !imporant;
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
@@ -240,7 +240,7 @@ input[type=number] {
         margin-right: auto;
     }
     .mobileMenu {
-        display: none;
+        display: none !imporant;
     }
     #testimonial {
         width: 70%;
@@ -250,7 +250,7 @@ input[type=number] {
         right: 5%;
     }
     #mobileMenu {
-        display: none;
+        display: none !imporant;
     }
 }
 
@@ -313,14 +313,17 @@ input[type=number] {
         box-shadow: inset 0px 3px 5px rgba(0, 0, 0, .1);
     }
     #mobileMenu a {
-        padding: 0px 15%;
+        margin: auto;
+        padding: .5rem 0px;
         user-select: none;
         color: rgb(17,122,180);
+        width: 90%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
     }
     #mobileMenu a:hover {
         color: rgb(73,194,239);
-    }
-    #mobileMenu a:visited {
-        color: rgb(17,122,180);
     }
 }
