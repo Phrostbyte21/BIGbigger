@@ -50,7 +50,7 @@ function first(array, count = 10) {
 const businessDiv = document.getElementById('companies');
 
 first(business).map(person => {
-    let h4 = createNode('h4'),
+    let h4 = createNode('h4');
         console.log(person.name);
 
     span.innerText = `${person.name}`;
