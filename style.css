@@ -215,10 +215,10 @@ input[type=number] {
     transition: .3s;
 }
 .mobileMenu {
-    display: none;
+    display: none!important;
 }
 #mobileMenu {
-    display: none;
+    display: none!important;
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
@@ -246,10 +246,10 @@ input[type=number] {
         right: 5%;
     }
     .mobileMenu {
-        display: none;
+        display: none!important;
     }
     #mobileMenu {
-        display: none;
+        display: none!important;
     }
 }
 
