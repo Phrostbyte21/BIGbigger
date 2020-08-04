@@ -63,8 +63,8 @@ export const business = [
     {
         "name": "Socinu",
         "types": [
-            "Bakery",
             "Food",
+            "Bakery",
             "Sweets"
         ],
         "founded": "2012"
@@ -105,25 +105,25 @@ export const business = [
     {
         "name": "On The Vine",
         "types": [
+            "Food",
             "Resturaunt",
-            "Wine",
-            "Food"
+            "Wine"
         ],
         "founded": "2014"
     },
     {
         "name": "Mary Joe",
         "types": [
-            "Resturaunt",
-            "Food"
+            "Food",
+            "Resturaunt"
         ],
         "founded": "2019"
     },
     {
         "name": "Coffers Coffin",
         "types": [
-            "Resturaunt",
-            "Food",
+            "Food,"
+            "Resturaunt"
             "Gaming"
         ],
         "founded": "2018"
