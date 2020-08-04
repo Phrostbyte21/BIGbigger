@@ -43,7 +43,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 
-function first(array, count = business.length) {
+function first(array, count = 26) {
     return array.slice(0, count);
 }
 
