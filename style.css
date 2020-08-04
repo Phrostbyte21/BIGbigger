@@ -286,9 +286,6 @@ input[type=number] {
         display: flex;
         align-items: center;
         font-size: 2rem;
-        display: block;
-        right: 20px;
-        top: 15px;
     }
     input {
         width: 96%;
@@ -314,12 +311,13 @@ input[type=number] {
         display: flex;
         flex-direction: column;
         align-items: center;
+        box-shadow: inset 0px 3px 5px rgba(0, 0, 0, .1);
     }
-    #mobileMenu h1 {
+    #mobileMenu h2 {
         padding: 0px 15%;
         user-select: none;
     }
-    #mobileMenu h1:hover {
+    #mobileMenu h2:hover {
         color: rgb(73,194,239)
     }
 }
