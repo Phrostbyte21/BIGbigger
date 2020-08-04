@@ -51,12 +51,10 @@ const businessDiv = document.getElementById('companies');
 
 first(business).map(person => {
     let h4 = createNode('h4'),
-        span = createNode('span');
         console.log(person.name);
 
     span.innerText = `${person.name}`;
 
-    append(h4, span);
     append(businessDiv, h4);
 })
 
