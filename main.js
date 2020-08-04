@@ -12,16 +12,6 @@ q.innerText = testimonials[index].testimonial;
 
 document.getElementById('testimonial').append(q);
 
-// Open/Close mobile menu
-function menu() {
-    var x = document.getElementById("mobileMenu");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "flex";
-    }
-  }
-
 //Pull random user images and names from the API
 const userURL = 'https://randomuser.me/api/';
 const span = document.getElementById('rndUser');
