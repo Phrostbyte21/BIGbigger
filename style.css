@@ -180,8 +180,13 @@ input[type=number] {
     position: absolute;
 }
 
-#companies li {
-    text-decoration: none;
+#companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#companies h4 {
+    margin: 20px 0;
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
