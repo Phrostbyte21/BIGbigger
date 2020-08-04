@@ -57,7 +57,9 @@ function createBusiness(person) {
 
 const businessDiv = document.getElementById('companies');
 const foodToggle = document.getElementById('food');
+const technologyToggle = document.getElementById('technology');
 let isFood = true;
+let isTechnology = true;
 
 // Food Toggle Button
 foodToggle.addEventListener('click', () => {
@@ -70,6 +72,24 @@ foodToggle.addEventListener('click', () => {
         } else if (person.types[1] == 'Food') {
             return person.name;
         } else if (person.types[2] == 'Food') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Technology Toggle Button
+technologyToggle.addEventListener('click', () => {
+    isTechnology = !isTechnology
+    businessDiv.innerText = '';
+    
+    business.filter(person => {
+        if (person.types[0] == 'Technology') {
+            return person.name;
+        } else if (person.types[1] == 'Technology') {
+            return person.name;
+        } else if (person.types[2] == 'Technology') {
             return person.name;
         }
     })
