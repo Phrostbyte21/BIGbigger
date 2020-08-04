@@ -1,4 +1,4 @@
-//Import Testimonials API
+//Import APIs
 import { testimonials } from './testimonials.js'
 import { business } from './business.js'
 
@@ -35,12 +35,13 @@ fetch(userURL)
     })
 
 // Pulling in business names and printing HTML
-const companies = document.getElementById('companies');
 const li = document.createElement('li');
 
 li.innerText = business.name;
+console.log(business.name);
 
 document.getElementById('companies').append(li);
+
 
 // Change Submit button text
 document.getElementById("submitBtn").addEventListener("click", () => {
