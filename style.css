@@ -175,10 +175,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.mobileMenu {
-    display: none !imporant;
-}
-
 #companies {
     display: flex;
     flex-wrap: wrap;
@@ -218,9 +214,6 @@ input[type=number] {
     background-color: rgba(0, 0, 0, .05);
     transition: .3s;
 }
-#mobileMenu {
-    display: none !imporant;
-}
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
 /* -------------------------------------------------------- */
@@ -239,18 +232,12 @@ input[type=number] {
         margin-left: auto;
         margin-right: auto;
     }
-    .mobileMenu {
-        display: none !imporant;
-    }
     #testimonial {
         width: 70%;
         text-align: left;
     }
     .testNext {
         right: 5%;
-    }
-    #mobileMenu {
-        display: none !imporant;
     }
 }
 
@@ -307,7 +294,6 @@ input[type=number] {
         background-color: white;
         color: rgb(17,122,180);
         width: 100%;
-        display: none;
         flex-direction: column;
         align-items: center;
         box-shadow: inset 0px 3px 5px rgba(0, 0, 0, .1);
