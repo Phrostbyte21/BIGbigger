@@ -53,7 +53,7 @@ first(business).map(person => {
     let h4 = createNode('h4');
         console.log(person.name);
 
-    span.innerText = `${person.name}`;
+    h4.innerText = `${person.name}`;
 
     append(businessDiv, h4);
 })
