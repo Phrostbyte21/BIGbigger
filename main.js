@@ -47,17 +47,17 @@ function first(array, count = 10) {
     return array.slice(0, count);
 }
 
-const businessul = document.getElementById('companies');
+const businessDiv = document.getElementById('companies');
 
 first(business).map(person => {
-    let li = createNode('li'),
+    let h4 = createNode('h4'),
         span = createNode('span');
         console.log(person.name);
 
     span.innerText = `${person.name}`;
 
-    append(li, span);
-    append(businessul, li);
+    append(h4, span);
+    append(businessDiv, h4);
 })
 
 
