@@ -60,6 +60,7 @@ const businessDiv = document.getElementById('companies');
 const foodToggle = document.getElementById('food');
 let isFood = true;
 
+// Food Toggle Button
 foodToggle.addEventListener('click', () => {
     isFood = !isFood
     businessDiv.innerText = '';
@@ -72,13 +73,11 @@ foodToggle.addEventListener('click', () => {
     })
 })
 
+//Pulls the first n count of businesses and displays that many on page load
 first(business).map(person => {
-    let h4 = createNode('h4');
-        console.log(person.name);
-
-    h4.innerText = `${person.name}`;
-
-    append(businessDiv, h4);
+    .map(person => {
+        createBusiness(person);
+    })
 })
 
 
