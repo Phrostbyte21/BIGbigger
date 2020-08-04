@@ -54,7 +54,7 @@ first(business).map(person => {
         span = createNode('span');
         console.log(person.name);
 
-    span.innerText = `${business.name}`;
+    span.innerText = `${person.name}`;
 
     append(li, span);
     append(businessul, li);
