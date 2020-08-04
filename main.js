@@ -52,9 +52,9 @@ const businessul = document.getElementById('companies');
 first(business).map(person => {
     let li = createNode('li'),
         span = createNode('span');
-        console.log(business[0].name);
+        console.log(business.name);
 
-    span.innerText = `${business.name[0]}`;
+    span.innerText = `${business.name}`;
 
     append(li, span);
     append(businessul, li);
