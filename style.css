@@ -245,6 +245,9 @@ input[type=number] {
         width: 70%;
         text-align: left;
     }
+    .testNext {
+        right: 5%;
+    }
 }
 
 /* -------------------------------------------------------- */
@@ -293,7 +296,10 @@ input[type=number] {
         text-align: left;
     }
     #testimonial {
-        width: 90%;
+        width: 75%;
         text-align: center;
+    }
+    .testNext {
+        right: 4%;
     }
 }
