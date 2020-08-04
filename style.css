@@ -214,6 +214,9 @@ input[type=number] {
     background-color: rgba(0, 0, 0, .05);
     transition: .3s;
 }
+.mobileMenu {
+    display: none;
+}
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
 /* -------------------------------------------------------- */
@@ -242,6 +245,9 @@ input[type=number] {
     .navItems {
         display: flex;
     }
+    .mobileMenu {
+        display: none;
+    }
 }
 
 /* -------------------------------------------------------- */
@@ -256,12 +262,14 @@ input[type=number] {
     .nav {
         justify-content: space-around;
         height: 60px;
+        padding: 0px 1rem;
     }
     .logo {
         border: 2px solid white;
         padding: 5px;
         width: 75px;
         border-radius: 14px;
+        margin-left: 0px;
     }
     .sectionHeader {
         width: 90%;
