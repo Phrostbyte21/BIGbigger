@@ -59,8 +59,26 @@ const businessDiv = document.getElementById('companies');
 const allToggle = document.getElementById('all');
 const foodToggle = document.getElementById('food');
 const technologyToggle = document.getElementById('technology');
+const entertainmentToggle = document.getElementById('entertainment');
+const gamingToggle = document.getElementById('gaming');
+const cleaningToggle = document.getElementById('cleaning');
+const resturauntToggle = document.getElementById('resturaunt');
+const transportationToggle = document.getElementById('transportation');
+const shoppingToggle = document.getElementById('shopping');
+const animalToggle = document.getElementById('animal');
+const applicationToggle = document.getElementById('application');
+const apparelToggle = document.getElementById('apparel');
 let isFood = true;
 let isTechnology = true;
+let isEntertainment = true;
+let isGaming = true;
+let isCleaning = true;
+let isResturaunt = true;
+let isTransportation = true;
+let isShopping = true;
+let isAnimal = true;
+let isApplication = true;
+let isApparel = true;
 
 // All Toggle Button
 allToggle.addEventListener('click', () => {
@@ -73,7 +91,6 @@ allToggle.addEventListener('click', () => {
 foodToggle.addEventListener('click', () => {
     isFood = !isFood
     businessDiv.innerText = '';
-    
     business.filter(person => {
         if (person.types[0] == 'Food') {
             return person.name;
@@ -91,13 +108,29 @@ foodToggle.addEventListener('click', () => {
 technologyToggle.addEventListener('click', () => {
     isTechnology = !isTechnology
     businessDiv.innerText = '';
-    
     business.filter(person => {
         if (person.types[0] == 'Technology') {
             return person.name;
         } else if (person.types[1] == 'Technology') {
             return person.name;
         } else if (person.types[2] == 'Technology') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Entertainment Toggle Button
+entertainmentToggle.addEventListener('click', () => {
+    isEntertainment = !isEntertainment
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Entertainment') {
+            return person.name;
+        } else if (person.types[1] == 'Entertainment') {
+            return person.name;
+        } else if (person.types[2] == 'Entertainment') {
             return person.name;
         }
     })

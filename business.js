@@ -12,8 +12,7 @@ export const business = [
         "name": "Betty's Baked Goods",
         "types": [
             "Food",
-            "Baking",
-            "Sweets"
+            "Shopping"
         ],
         "founded": "2018"
     },
@@ -21,59 +20,47 @@ export const business = [
         "name": "Charlie's Repair Shop",
         "types": [
             "Technology",
-            "Repair"
+            "Entertainment"
         ],
         "founded": "2019"
     },
     {
         "name": "Rad Records",
         "types": [
-            "Music",
-            "Vintage",
-            "Small"
+            "Entertainment",
+            "Technology"
         ],
         "founded": "2001"
     },
     {
         "name": "Starlight Music",
         "types": [
-            "Recording",
-            "Music",
-            "Large"
+            "Entertainment",
+            "Technology"
         ],
         "founded": "2005"
     },
     {
         "name": "Pixofix",
         "types": [
-            "Camera",
-            "Development",
             "Technology"
         ],
         "founded": "2007"
     },
     {
-        "name": "Pyronte",
-        "types": [
-            "Hardware",
-            "Camping"
-        ],
-        "founded": "2010"
-    },
-    {
         "name": "Socinu",
         "types": [
             "Food",
-            "Bakery",
-            "Sweets"
+            "Resturaunt"
         ],
         "founded": "2012"
     },
     {
         "name": "Leenix",
         "types": [
-            "Games",
-            "Music"
+            "Technology",
+            "Entertainment",
+            "Gaming"
         ],
         "founded": "2010"
     },
@@ -81,7 +68,7 @@ export const business = [
         "name": "Norvax",
         "types": [
             "Technology",
-            "Support"
+            "Gaming"
         ],
         "founded": "2009"
     },
@@ -89,16 +76,14 @@ export const business = [
         "name": "Chocolate Loop",
         "types": [
             "Food",
-            "Baking",
-            "Sweets"
+            "Shopping"
         ],
         "founded": "2013"
     },
     {
         "name": "Merrywind",
         "types": [
-            "Cleaning",
-            "Nannying"
+            "Cleaning"
         ],
         "founded": "2010"
     },
@@ -107,7 +92,7 @@ export const business = [
         "types": [
             "Food",
             "Resturaunt",
-            "Wine"
+            "Shopping"
         ],
         "founded": "2014"
     },
@@ -131,7 +116,6 @@ export const business = [
     {
         "name": "Mr Brightside",
         "types": [
-            "Taxi",
             "Transportation"
         ],
         "founded": "2017"
@@ -140,14 +124,14 @@ export const business = [
         "name": "Lazy Gaming",
         "types": [
             "Gaming",
-            "Music"
+            "Entertainment"
         ],
         "founded": "2019"
     },
     {
         "name": "Make-A-Mask",
         "types": [
-            "Clothing"
+            "Apparel"
         ],
         "founded": "2020"
     },
@@ -155,16 +139,16 @@ export const business = [
         "name": "Hero Forge",
         "types": [
             "Gaming",
-            "Board Game"
+            "Entertainment"
         ],
         "founded": "2017"
     },
     {
         "name": "Bismark's Bone",
         "types": [
-            "Pet",
             "Animal",
-            "Resturaunt"
+            "Resturaunt",
+            "Entertainment"
         ],
         "founded": "2018"
     },
@@ -172,30 +156,22 @@ export const business = [
         "name": "ID10T Errors",
         "types": [
             "Technology",
-            "Support"
+            "Application"
         ],
         "founded": "2011"
     },
     {
         "name": "Foam Fiesta",
         "types": [
-            "Party",
-            "Holiday"
+            "Shopping",
+            "Entertainment"
         ],
         "founded": "2009"
     },
     {
-        "name": "Cutters",
-        "types": [
-            "Craft",
-            "Decor"
-        ],
-        "founded": "2007"
-    },
-    {
         "name": "Heartwire",
         "types": [
-            "Dating",
+            "Technology",
             "Application"
         ],
         "founded": "2014"
@@ -203,9 +179,8 @@ export const business = [
     {
         "name": "Emojiville",
         "types": [
-            "Dating",
-            "Social Media",
-            "Application"
+            "Application",
+            "Entertainment"
         ],
         "founded": "2015"
     },
@@ -215,5 +190,39 @@ export const business = [
             "Technology"
         ],
         "founded": "2000"
+    },
+    {
+        "name": "Super Nanny",
+        "types": [
+            "Cleaning",
+            "Application"
+        ],
+        "founded": "2015"
+    },
+    {
+        "name": "A to B",
+        "types": [
+            "Technology",
+            "Transportation",
+            "Application"
+        ],
+        "founded": "2013"
+    },
+    {
+        "name": "Kate's Closet",
+        "types": [
+            "Shopping",
+            "Apparel"
+        ],
+        "founded": "2006"
+    },
+    {
+        "name": "Zoey's Threads",
+        "types": [
+            "Shopping",
+            "Apparel",
+            "Application"
+        ],
+        "founded": "2019"
     }
 ]
