@@ -115,6 +115,8 @@ first(business).map(person => {
 const newTest = document.getElementById('newTestinomial');
 
 newTest.addEventListener('click', () => {
+    rndUser.innerText = '';
+    testimonial.innerText = '';
     const index = Math.floor(Math.random() * testimonials.length);
 
     const q = document.createElement('q');
