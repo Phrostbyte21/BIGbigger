@@ -38,9 +38,10 @@ fetch(userURL)
 const indexTwo = Math.floor(Math.random() * business.length);
 const li = document.createElement('li');
 
+indexTwo + 5;
+
 li.innerText = business[indexTwo].name;
 console.log(business[indexTwo].name);
-console.log(business[indexTwo].founded);
 
 document.getElementById('companies').append(li);
 
