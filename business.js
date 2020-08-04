@@ -2,8 +2,8 @@ export const business = [
     {
         "name": "Grill n' Chill",
         "types": [
-            "Food",
             "Entertainment",
+            "Food",
             "Shopping"
         ],
         "founded": "2017"

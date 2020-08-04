@@ -49,7 +49,6 @@ function first(array, count = 26) {
 
 function createBusiness(person) {
     let h4 = createNode('h4');
-    console.log(person.name);
 
     h4.innerText = `${person.name}`;
 
@@ -67,6 +66,10 @@ foodToggle.addEventListener('click', () => {
     
     business.filter(person => {
         if (person.types[0] == 'Food') {
+            return person.name;
+        } else if (person.types[1] == 'Food') {
+            return person.name;
+        } else if (person.types[2] == 'Food') {
             return person.name;
         }
     })
