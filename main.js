@@ -51,7 +51,7 @@ const businessDiv = document.getElementById('companies');
 const foodToggle = document.getElementById('food');
 let isFood = true;
 
-foodToggleBtn.addEventListener('click', () => {
+foodToggle.addEventListener('click', () => {
     isFood = !isFood
     
     h4.innerText = '';
