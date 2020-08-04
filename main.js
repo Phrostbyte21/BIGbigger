@@ -281,7 +281,7 @@ first(business).map(person => {
 })
 
 //Generates a new company testimonial
-const newTest = document.getElementById('newTestinomial');
+const newTest = document.getElementById('newTestimonial');
 
 newTest.addEventListener('click', () => {
     rndUser.innerText = '';

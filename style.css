@@ -209,10 +209,12 @@ input[type=number] {
     transform: scaleY(3) scaleX(2.5);
     transition: .3s;
     padding: 5px;
+    opacity: .3;
 }
 .testNext:hover {
     background-color: rgba(0, 0, 0, .05);
     transition: .3s;
+    opacity: .5;
 }
 .mobileMenu {
     display: none;
