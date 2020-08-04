@@ -214,6 +214,9 @@ input[type=number] {
     background-color: rgba(0, 0, 0, .05);
     transition: .3s;
 }
+.mobileMenu {
+    display: none;
+}
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
 /* -------------------------------------------------------- */
@@ -238,6 +241,9 @@ input[type=number] {
     }
     .testNext {
         right: 5%;
+    }
+    .mobileMenu {
+        display: none;
     }
 }
 
