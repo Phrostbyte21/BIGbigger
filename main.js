@@ -39,9 +39,9 @@ function first(array, count = 10) {
     return array.slice(0, count);
 }
 
-const companies = document.getElementById('companies');
+const companiesul = document.getElementById('companies');
 
-first(companies).map(business => {
+first(business).map(singleComp => {
     let li = document.createElement('li'),
         span = document.createElement('span');
 
