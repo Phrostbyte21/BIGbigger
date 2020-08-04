@@ -66,7 +66,9 @@ foodToggle.addEventListener('click', () => {
     businessDiv.innerText = '';
     
     business.filter(person => {
-        return isFood ? person.types == 'food' : person.types == 'technology'
+        if (person.types[0] == 'food') {
+            return person.types[0];
+        }
     })
     .map(person => {
         createBusiness(person);
@@ -84,3 +86,8 @@ document.getElementById("submitBtn").addEventListener("click", () => {
     document.getElementById("submitBtn").innerHTML = "Submitted!";
     setTimeout(function(){ document.getElementById("submitBtn").innerHTML = "Submit" }, 5000);
 });
+
+
+// business.filter(person => {
+//     return isFood ? person.types == 'food' : person.types == 'technology'
+// })
