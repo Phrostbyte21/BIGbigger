@@ -34,6 +34,26 @@ fetch(userURL)
         })
     })
 
+// Pulling in business names and printing HTML
+first(business).map(company => {
+        let li = document.createElement('li'),
+            span = document.createElement('span');
+    
+        span.innerText = `${company.name}`;
+    
+        span.appendChild(li);
+    })
+
+
+
+const index = Math.floor(Math.random() * business.length);
+
+const li = document.createElement('li');
+
+li.innerText = business[index].testimonial;
+
+document.getElementById('testimonial').append(li);
+
 // Change Submit button text
 document.getElementById("submitBtn").addEventListener("click", () => {
     document.getElementById("submitBtn").innerHTML = "Submitted!";
