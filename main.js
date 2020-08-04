@@ -66,7 +66,7 @@ foodToggle.addEventListener('click', () => {
     businessDiv.innerText = '';
     
     business.filter(person => {
-        if (person.founded == '2017') {
+        if (person.types[0] == 'Food') {
             return person.name;
         }
     })
