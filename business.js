@@ -215,5 +215,5 @@ export const business = [
             "Technology"
         ],
         "founded": "2000"
-    },
+    }
 ]
