@@ -312,14 +312,9 @@ input[type=number] {
         align-items: center;
         box-shadow: inset 0px 3px 5px rgba(0, 0, 0, .1);
     }
-    #mobileMenu h2 {
+    #mobileMenu a {
         padding: 0px 15%;
         user-select: none;
-    }
-    #mobileMenu h2:hover {
-        color: rgb(73,194,239);
-    }
-    #mobileMenu a {
         color: rgb(17,122,180);
     }
     #mobileMenu a:hover {
