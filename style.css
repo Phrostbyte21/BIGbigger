@@ -214,12 +214,6 @@ input[type=number] {
     background-color: rgba(0, 0, 0, .05);
     transition: .3s;
 }
-.mobileMenu {
-    display: none!important;
-}
-#mobileMenu {
-    display: none!important;
-}
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
 /* -------------------------------------------------------- */
@@ -245,12 +239,6 @@ input[type=number] {
     .testNext {
         right: 5%;
     }
-    .mobileMenu {
-        display: none!important;
-    }
-    #mobileMenu {
-        display: none!important;
-    }
 }
 
 /* -------------------------------------------------------- */
@@ -260,6 +248,7 @@ input[type=number] {
     header {
         font-size: .6rem;
         height: 60px;
+        padding: 0px;
     }
     .nav {
         justify-content: space-around;
@@ -282,7 +271,7 @@ input[type=number] {
         visibility: hidden;
     }
     .mobileMenu {
-        display: flex!important;
+        display: flex;
         align-items: center;
         font-size: 2rem;
     }
