@@ -122,8 +122,8 @@ export const business = [
     {
         "name": "Coffers Coffin",
         "types": [
-            "Food,"
-            "Resturaunt"
+            "Food",
+            "Resturaunt",
             "Gaming"
         ],
         "founded": "2018"
