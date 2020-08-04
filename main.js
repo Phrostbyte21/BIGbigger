@@ -35,15 +35,17 @@ fetch(userURL)
     })
 
 // Pulling in business names and printing HTML
-const indexTwo = Math.floor(Math.random() * business.length);
-const li = document.createElement('li');
-let businesses;
+function first(array, count = 10) {
+    return array.slice(0, count);
+}
 
-businesses.map(business => {
-    li.innerText = business[indexTwo].name;
-    console.log(business[indexTwo].name);
+first(companies).map(business => {
+    let li = document.createElement('li'),
+        span = document.createElement('span');
 
-    document.getElementById('companies').append(li);
+    span.innerText = `${business.name}`;
+
+    span.appendChild(li);
 })
 
 
