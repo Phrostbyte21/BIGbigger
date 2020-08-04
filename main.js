@@ -48,6 +48,8 @@ first(business).map(singleComp => {
     span.innerText = `${business.name}`;
 
     span.appendChild(li);
+    span.(companiesul);
+    console.log(business.name);
 })
 
 
