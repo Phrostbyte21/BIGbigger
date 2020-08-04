@@ -102,6 +102,7 @@ img {
 #testimonial {
     width: 50%;
     margin-bottom: 40px ;
+    text-align: left;
 }
 
 #rndUser {
@@ -179,7 +180,12 @@ input[type=number] {
     position: absolute;
 }
 
-/* Tablet */
+#companies li {
+    text-decoration: none;
+}
+/* -------------------------------------------------------- */
+/* -------------------------Tablet------------------------- */
+/* -------------------------------------------------------- */
 @media (min-width: 481px) and (max-width: 768px) {
     header {
         font-size: .6rem;
@@ -198,9 +204,15 @@ input[type=number] {
     .mobileMenu {
         visibility: hidden;
     }
+    #testimonial {
+        width: 70%;
+        text-align: left;
+    }
 }
 
-/* Mobile */
+/* -------------------------------------------------------- */
+/* -------------------------Mobile------------------------- */
+/* -------------------------------------------------------- */
 @media (max-width: 480px) {
     header {
         font-size: .6rem;
@@ -242,5 +254,9 @@ input[type=number] {
     }
     .ideaForm {
         text-align: left;
+    }
+    #testimonial {
+        width: 90%;
+        text-align: center;
     }
 }
