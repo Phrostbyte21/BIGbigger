@@ -35,6 +35,10 @@ fetch(userURL)
     })
 
 // Pulling in business names and printing HTML
+function first(array, count = 10) {
+    return array.slice(0, count);
+}
+
 const li = document.createElement('li');
 
 first(business).map(company => {
