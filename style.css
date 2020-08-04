@@ -183,10 +183,29 @@ input[type=number] {
 #companies {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 #companies h4 {
-    margin: 20px 0;
+    margin: 5px 10px;
+}
+
+.filters {
+    display: flex;
+}
+
+.filters h3 {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 10px;
+    margin: 5px 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    user-select: none;
+    transition: .3s;
+}
+
+.filters h3:hover {
+    background-color: rgba(255, 255, 255, .2);
+    transition: .3s;
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
