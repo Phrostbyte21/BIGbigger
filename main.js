@@ -75,9 +75,7 @@ foodToggle.addEventListener('click', () => {
 
 //Pulls the first n count of businesses and displays that many on page load
 first(business).map(person => {
-    .map(person => {
-        createBusiness(person);
-    })
+    createBusiness(person);
 })
 
 
