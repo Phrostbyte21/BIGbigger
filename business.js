@@ -15,7 +15,7 @@ export const business = [
             "Baking",
             "Sweets"
         ],
-        "founded": "2015"
+        "founded": "2018"
     },
     {
         "name": "Charlie's Repair Shop",
