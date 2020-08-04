@@ -177,7 +177,6 @@ input[type=number] {
 
 .mobileMenu {
     display: none;
-    position: absolute;
 }
 
 #companies {
@@ -310,17 +309,15 @@ input[type=number] {
     #mobileMenu {
         background-color: white;
         color: rgb(17,122,180);
-        width: 70%;
-        height: 400px;
-        position: absolute;
-        top: 0;
-        right: 0;
+        width: 100%;
+        height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     #mobileMenu h1 {
         padding: 0px 15%;
+        user-select: none;
     }
     #mobileMenu h1:hover {
         color: rgb(73,194,239)
