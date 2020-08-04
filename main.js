@@ -138,6 +138,142 @@ entertainmentToggle.addEventListener('click', () => {
         createBusiness(person);
     })
 })
+// Gaming Toggle Button
+gamingToggle.addEventListener('click', () => {
+    isGaming = !isGaming
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Gaming') {
+            return person.name;
+        } else if (person.types[1] == 'Gaming') {
+            return person.name;
+        } else if (person.types[2] == 'Gaming') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Cleaning Toggle Button
+cleaningToggle.addEventListener('click', () => {
+    isCleaning = !isCleaning
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Cleaning') {
+            return person.name;
+        } else if (person.types[1] == 'Cleaning') {
+            return person.name;
+        } else if (person.types[2] == 'Cleaning') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Resturaunt Toggle Button
+resturauntToggle.addEventListener('click', () => {
+    isResturaunt = !isResturaunt
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Resturaunt') {
+            return person.name;
+        } else if (person.types[1] == 'Resturaunt') {
+            return person.name;
+        } else if (person.types[2] == 'Resturaunt') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Transportation Toggle Button
+transportationToggle.addEventListener('click', () => {
+    isTransportation = !isTransportation
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Transportation') {
+            return person.name;
+        } else if (person.types[1] == 'Transportation') {
+            return person.name;
+        } else if (person.types[2] == 'Transportation') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Shopping Toggle Button
+shoppingToggle.addEventListener('click', () => {
+    isShopping = !isShopping
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Shopping') {
+            return person.name;
+        } else if (person.types[1] == 'Shopping') {
+            return person.name;
+        } else if (person.types[2] == 'Shopping') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Animal Toggle Button
+animalToggle.addEventListener('click', () => {
+    isAnimal = !isAnimal
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Animal') {
+            return person.name;
+        } else if (person.types[1] == 'Animal') {
+            return person.name;
+        } else if (person.types[2] == 'Animal') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Application Toggle Button
+applicationToggle.addEventListener('click', () => {
+    isApplication = !isApplication
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Application') {
+            return person.name;
+        } else if (person.types[1] == 'Application') {
+            return person.name;
+        } else if (person.types[2] == 'Application') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
+// Apparel Toggle Button
+apparelToggle.addEventListener('click', () => {
+    isApparel = !isApparel
+    businessDiv.innerText = '';
+    business.filter(person => {
+        if (person.types[0] == 'Apparel') {
+            return person.name;
+        } else if (person.types[1] == 'Apparel') {
+            return person.name;
+        } else if (person.types[2] == 'Apparel') {
+            return person.name;
+        }
+    })
+    .map(person => {
+        createBusiness(person);
+    })
+})
 
 //Pulls the first n count of businesses and displays that many on page load
 first(business).map(person => {
