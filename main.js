@@ -39,6 +39,7 @@ const li = document.createElement('li');
 
 li.innerText = business.name;
 console.log(business.name);
+console.log(business.founded);
 
 document.getElementById('companies').append(li);
 
