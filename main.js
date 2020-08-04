@@ -47,6 +47,15 @@ function first(array, count = 10) {
     return array.slice(0, count);
 }
 
+function createBusiness(person) {
+    let h4 = createNode('h4');
+    console.log(person.name);
+
+    h4.innerText = `${person.name}`;
+
+    append(businessDiv, h4);
+}
+
 const businessDiv = document.getElementById('companies');
 const foodToggle = document.getElementById('food');
 let isFood = true;
@@ -59,14 +68,7 @@ foodToggle.addEventListener('click', () => {
         return isFood ? person.founded == '2018' : person.founded == '2017'
     })
     .map(person => {
-        createBusiness(person)
-
-        let h4 = createNode('h4');
-        console.log(person.name);
-
-        h4.innerText = `${person.name}`;
-
-        append(businessDiv, h4);
+        createBusiness(person);
     })
 })
 
