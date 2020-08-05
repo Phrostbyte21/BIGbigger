@@ -5,11 +5,8 @@ import { business } from './business.js'
 // Create variable with random length based on API entries
 // then print the selected testimonial to HTML
 const index = Math.floor(Math.random() * testimonials.length);
-
 const q = document.createElement('q');
-
 q.innerText = testimonials[index].testimonial;
-
 document.getElementById('testimonial').append(q);
 
 //Pull random user images and names from the API
@@ -47,11 +44,9 @@ function first(array, count = 26) {
     return array.slice(0, count);
 }
 
-function createBusiness(person) {
+function createBusiness(company) {
     let h4 = createNode('h4');
-
-    h4.innerText = `${person.name}`;
-
+    h4.innerText = `${company.name}`;
     append(businessDiv, h4);
 }
 
@@ -83,201 +78,201 @@ let isApparel = true;
 // All Toggle Button
 allToggle.addEventListener('click', () => {
     businessDiv.innerText = '';
-    first(business).map(person => {
-        createBusiness(person);
+    first(business).map(company => {
+        createBusiness(company);
     })
 })
 // Food Toggle Button
 foodToggle.addEventListener('click', () => {
     isFood = !isFood
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Food') {
-            return person.name;
-        } else if (person.types[1] == 'Food') {
-            return person.name;
-        } else if (person.types[2] == 'Food') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Food') {
+            return company.name;
+        } else if (company.types[1] == 'Food') {
+            return company.name;
+        } else if (company.types[2] == 'Food') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Technology Toggle Button
 technologyToggle.addEventListener('click', () => {
     isTechnology = !isTechnology
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Technology') {
-            return person.name;
-        } else if (person.types[1] == 'Technology') {
-            return person.name;
-        } else if (person.types[2] == 'Technology') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Technology') {
+            return company.name;
+        } else if (company.types[1] == 'Technology') {
+            return company.name;
+        } else if (company.types[2] == 'Technology') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Entertainment Toggle Button
 entertainmentToggle.addEventListener('click', () => {
     isEntertainment = !isEntertainment
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Entertainment') {
-            return person.name;
-        } else if (person.types[1] == 'Entertainment') {
-            return person.name;
-        } else if (person.types[2] == 'Entertainment') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Entertainment') {
+            return company.name;
+        } else if (company.types[1] == 'Entertainment') {
+            return company.name;
+        } else if (company.types[2] == 'Entertainment') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Gaming Toggle Button
 gamingToggle.addEventListener('click', () => {
     isGaming = !isGaming
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Gaming') {
-            return person.name;
-        } else if (person.types[1] == 'Gaming') {
-            return person.name;
-        } else if (person.types[2] == 'Gaming') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Gaming') {
+            return company.name;
+        } else if (company.types[1] == 'Gaming') {
+            return company.name;
+        } else if (company.types[2] == 'Gaming') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Cleaning Toggle Button
 cleaningToggle.addEventListener('click', () => {
     isCleaning = !isCleaning
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Cleaning') {
-            return person.name;
-        } else if (person.types[1] == 'Cleaning') {
-            return person.name;
-        } else if (person.types[2] == 'Cleaning') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Cleaning') {
+            return company.name;
+        } else if (company.types[1] == 'Cleaning') {
+            return company.name;
+        } else if (company.types[2] == 'Cleaning') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Resturaunt Toggle Button
 resturauntToggle.addEventListener('click', () => {
     isResturaunt = !isResturaunt
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Resturaunt') {
-            return person.name;
-        } else if (person.types[1] == 'Resturaunt') {
-            return person.name;
-        } else if (person.types[2] == 'Resturaunt') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Resturaunt') {
+            return company.name;
+        } else if (company.types[1] == 'Resturaunt') {
+            return company.name;
+        } else if (company.types[2] == 'Resturaunt') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Transportation Toggle Button
 transportationToggle.addEventListener('click', () => {
     isTransportation = !isTransportation
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Transportation') {
-            return person.name;
-        } else if (person.types[1] == 'Transportation') {
-            return person.name;
-        } else if (person.types[2] == 'Transportation') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Transportation') {
+            return company.name;
+        } else if (company.types[1] == 'Transportation') {
+            return company.name;
+        } else if (company.types[2] == 'Transportation') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Shopping Toggle Button
 shoppingToggle.addEventListener('click', () => {
     isShopping = !isShopping
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Shopping') {
-            return person.name;
-        } else if (person.types[1] == 'Shopping') {
-            return person.name;
-        } else if (person.types[2] == 'Shopping') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Shopping') {
+            return company.name;
+        } else if (company.types[1] == 'Shopping') {
+            return company.name;
+        } else if (company.types[2] == 'Shopping') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Animal Toggle Button
 animalToggle.addEventListener('click', () => {
     isAnimal = !isAnimal
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Animal') {
-            return person.name;
-        } else if (person.types[1] == 'Animal') {
-            return person.name;
-        } else if (person.types[2] == 'Animal') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Animal') {
+            return company.name;
+        } else if (company.types[1] == 'Animal') {
+            return company.name;
+        } else if (company.types[2] == 'Animal') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Application Toggle Button
 applicationToggle.addEventListener('click', () => {
     isApplication = !isApplication
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Application') {
-            return person.name;
-        } else if (person.types[1] == 'Application') {
-            return person.name;
-        } else if (person.types[2] == 'Application') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Application') {
+            return company.name;
+        } else if (company.types[1] == 'Application') {
+            return company.name;
+        } else if (company.types[2] == 'Application') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 // Apparel Toggle Button
 apparelToggle.addEventListener('click', () => {
     isApparel = !isApparel
     businessDiv.innerText = '';
-    business.filter(person => {
-        if (person.types[0] == 'Apparel') {
-            return person.name;
-        } else if (person.types[1] == 'Apparel') {
-            return person.name;
-        } else if (person.types[2] == 'Apparel') {
-            return person.name;
+    business.filter(company => {
+        if (company.types[0] == 'Apparel') {
+            return company.name;
+        } else if (company.types[1] == 'Apparel') {
+            return company.name;
+        } else if (company.types[2] == 'Apparel') {
+            return company.name;
         }
     })
-    .map(person => {
-        createBusiness(person);
+    .map(company => {
+        createBusiness(company);
     })
 })
 
 //Pulls the first n count of businesses and displays that many on page load
-first(business).map(person => {
-    createBusiness(person);
+first(business).map(company => {
+    createBusiness(company);
 })
 
 //Generates a new company testimonial
@@ -317,15 +312,8 @@ newTest.addEventListener('click', () => {
         })
 })
 
-
-
 // Change Submit button text
 document.getElementById("submitBtn").addEventListener("click", () => {
     document.getElementById("submitBtn").innerHTML = "Submitted!";
     setTimeout(function(){ document.getElementById("submitBtn").innerHTML = "Submit" }, 5000);
 });
-
-
-// business.filter(person => {
-//     return isFood ? person.types == 'food' : person.types == 'technology'
-// })

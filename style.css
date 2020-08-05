@@ -1,19 +1,16 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0px;
     background: linear-gradient(145deg, rgba(73,194,239,1) 0%, rgba(17,122,180,1) 100%);
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
 }
-
 header {
     padding: 0px 1.5rem;
     background-color: rgba(255, 255, 255, .1);
 }
-
 .logo {
     display: flex;
     justify-content: center;
@@ -21,61 +18,48 @@ header {
     border-radius: 25px;
     width: 100px;
     padding: 10px;
-    /* transition: .2s; */
 }
-
 .logo:hover {
     background-color: rgba(255, 255, 255, .1);
     transition: .5s;
 }
-
 .nav {
     display: flex;
     justify-content: space-between;
     user-select: none;
-
 }
-
 .nav h2 {
     padding: 20px 20px;
 }
-
 .sectionHeader {
     margin-top: 100px;
     margin-bottom: 100px;
     margin-left: 15%;
     width: 50%;
 }
-
 .sectionHeader h1 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
 a {
     color: white;
     text-decoration: none;
 }
-
 a:visited {
     color: white;
     text-decoration: none;
 }
-
 a:hover {
     color: white;
     text-decoration: underline;
 }
-
 .navLogo {
     display: flex;
     align-items: center;
 }
-
 .navItems {
     display: flex;
 }
-
 .testimonials {
     background-color: white;
     color: #444;
@@ -86,7 +70,6 @@ a:hover {
     min-height: 500px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
 }
-
 img {
     width: 140px;
     height: 140px;
@@ -95,7 +78,6 @@ img {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
     margin: 40px 0;
 }
-
 .testimonials h1 {
     margin: 0;
 }
@@ -104,13 +86,11 @@ img {
     margin-bottom: 40px ;
     text-align: left;
 }
-
 #rndUser {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 input {
     height: 26px;
     border: none;
@@ -118,12 +98,9 @@ input {
     padding: 0px 8px;
     width: 100%;
 }
-
 input:focus {
     outline: none;
-
 }
-
 textarea {
     border: none;
     border-radius: 10px;
@@ -131,22 +108,18 @@ textarea {
     width: 100%;
     resize: vertical;
 }
-
 textarea:focus {
     outline: none;
 
 }
-
 .ideaFields {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
-
 #idea {
     min-height: 100px;
 }
-
 button {
     padding: 12px 35px;
     background-color: white;
@@ -155,27 +128,21 @@ button {
     transition: 1s;
     width: 150px;
 }
-
 button:hover {
     background-color: rgba(230,250,255,1);
     transition: .2s;
 }
-
 button:focus {
     outline: none;
-    
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 input[type=number] {
   -moz-appearance: textfield;
 }
-
 #companies {
     display: flex;
     flex-wrap: wrap;
@@ -184,12 +151,10 @@ input[type=number] {
 #companies h4 {
     margin: 5px 10px;
 }
-
 .filters {
     display: flex;
     flex-wrap: wrap;
 }
-
 .filters h3 {
     background-color: rgba(255, 255, 255, 0);
     padding: 5px 15px;
@@ -199,7 +164,6 @@ input[type=number] {
     user-select: none;
     transition: 1s;
 }
-
 .filters h3:hover {
     background-color: rgba(255, 255, 255, .2);
     transition: .2s;
