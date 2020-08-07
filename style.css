@@ -244,7 +244,7 @@ input[type=number] {
         flex-direction: column;
         align-items: center;
     }
-    .filter {
+    .filters {
         justify-content: center;
     }
 }
