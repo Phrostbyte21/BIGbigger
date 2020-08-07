@@ -8,33 +8,33 @@
     <script src="https://kit.fontawesome.com/a19696c91b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
-<header>
-    <div class="nav">
-        <div class="navLogo">
-            <h3 class="logo">BIGbigger</h3>
-        </div>
-        <div class="navItems">
-            <a href="#testimony"><h2>Testimonials</h2></a>
-            <a href="#about"><h2>About</h2></a>
-            <a href="#contactUs"><h2>Contact Us</h2></a>
-        </div>
-        <script>
-            // Open/Close mobile menu
-            function openMenu() {
-                var x = document.getElementById("mobileMenu");
-                if (x.style.display === "flex") {
-                x.style.display = "none";
-                } else {
-                x.style.display = "flex";
-                }
-            } 
-        </script>
-        <a href="javascript:void(0);" class="mobileMenu" style="text-decoration: none;" onclick="openMenu()">
-            <i class="fas fa-bars"></i>
-        </a>
-    </div>
-</header>
 <body>
+    <header>
+        <div class="nav">
+            <div class="navLogo">
+                <h3 class="logo">BIGbigger</h3>
+            </div>
+            <div class="navItems">
+                <a href="#testimony"><h2>Testimonials</h2></a>
+                <a href="#about"><h2>About</h2></a>
+                <a href="#contactUs"><h2>Contact Us</h2></a>
+            </div>
+            <script>
+                // Open/Close mobile menu
+                function openMenu() {
+                    var x = document.getElementById("mobileMenu");
+                    if (x.style.display === "flex") {
+                    x.style.display = "none";
+                    } else {
+                    x.style.display = "flex";
+                    }
+                } 
+            </script>
+            <a href="javascript:void(0);" class="mobileMenu" style="text-decoration: none;" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
     <div id="mobileMenu" style="display: none;">
         <a href="#testimony" onclick="openMenu()">Testimonials</a>
         <a href="#about" onclick="openMenu()">About</a>
@@ -77,6 +77,7 @@
         </p>
         <h2>Here are some of the companies we have helped others, just like yourself, create:</h2>
         <div class="filters">
+            <h3>Filters:</h3>
             <h3 id="all">All</h3>
             <h3 id="animal">Animal</h3>
             <h3 id="apparel">Apparel</h3>
@@ -85,10 +86,10 @@
             <h3 id="entertainment">Entertainment</h3>
             <h3 id="food">Food</h3>
             <h3 id="gaming">Gaming</h3>
-            <h3 id="resturaunt">Resturaunt</h3>
+            <h3 id="restaurant">Restaurant</h3>
             <h3 id="shopping">Shopping</h3>
             <h3 id="technology">Technology</h3>
-            <h3 id="transportation">Transportaion</h3>
+            <h3 id="transportation">Transportation</h3>
         </div>
         <div id="companies"></div>
     </div>
@@ -100,10 +101,10 @@
         <div class="ideaForm">
             <form id="ideaForm"> 
                 Name: <input type="text" id="name" name="name" placeholder="John Doe">
-                Number: <input type="number" id="number" name="number" placeholder="123-456-7890">
-                Big Idea: <textarea type="text" id="idea" name="fname" placeholder="John Doe"></textarea>
-                <button input type="reset" id="submitBtn">Submit</button>
-            </div>
+                Number: <input type="tel" id="number" name="number" placeholder="123-456-7890">
+                Big Idea: <textarea id="idea" placeholder="An apple hit me on the head the other day and got me thinking..."></textarea>
+                <button type="reset" id="submitBtn">Submit</button>
+            </form>
         </div>
     </div>
     <script type="module" src="main.js"></script>

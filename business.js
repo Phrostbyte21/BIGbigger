@@ -51,7 +51,7 @@ export const business = [
         "name": "Socinu",
         "types": [
             "Food",
-            "Resturaunt"
+            "Restaurant"
         ],
         "founded": "2012"
     },
@@ -91,7 +91,7 @@ export const business = [
         "name": "On The Vine",
         "types": [
             "Food",
-            "Resturaunt",
+            "Restaurant",
             "Shopping"
         ],
         "founded": "2014"
@@ -100,7 +100,7 @@ export const business = [
         "name": "Mary Joe",
         "types": [
             "Food",
-            "Resturaunt"
+            "Restaurant"
         ],
         "founded": "2019"
     },
@@ -108,7 +108,7 @@ export const business = [
         "name": "Coffers Coffin",
         "types": [
             "Food",
-            "Resturaunt",
+            "Restaurant",
             "Gaming"
         ],
         "founded": "2018"
@@ -147,7 +147,7 @@ export const business = [
         "name": "Bismark's Bone",
         "types": [
             "Animal",
-            "Resturaunt",
+            "Restaurant",
             "Entertainment"
         ],
         "founded": "2018"
