@@ -167,7 +167,7 @@ input[type=number] {
     transition: 1s;
 }
 .filters h3:hover {
-    background-color: rgba(200,250,255,.23);
+    background-color: rgba(0,0,0,.04);
     transition: .2s;
 }
 .testNext {
