@@ -248,6 +248,9 @@ input[type=number] {
     .filters {
         justify-content: center;
     }
+    #companies {
+        justify-content: center;
+    }
 }
 
 /* -------------------------------------------------------- */
