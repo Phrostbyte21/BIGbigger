@@ -196,11 +196,8 @@ input[type=number] {
     display: flex;
     flex-direction: row;
 }
-.liOne {
-    
-}
 .liTwo {
-    width: 125%;
+    width: 115%;
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
@@ -235,6 +232,17 @@ input[type=number] {
     }
     .sortableList {
         flex-direction: column;
+    }
+    .liOne {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .liTwo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -314,5 +322,22 @@ input[type=number] {
     }
     .sortableList {
         flex-direction: column;
+    }
+    .liOne {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .liTwo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filters {
+        justify-content: center;
+    }
+    #companies {
+        justify-content: center;
     }
 }
