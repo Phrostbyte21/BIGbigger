@@ -244,6 +244,9 @@ input[type=number] {
         flex-direction: column;
         align-items: center;
     }
+    .filter {
+        justify-content: center;
+    }
 }
 
 /* -------------------------------------------------------- */
