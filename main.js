@@ -32,22 +32,14 @@ fetch(userURL)
     })
 
 // Pulling in business names and printing HTML
-function createNode(element) {
-    return document.createElement(element);
-}
-
-function append(parent, el) {
-    return parent.appendChild(el);
-}
-
-function first(array, count = 26) {
+function first(array, count = 28) {
     return array.slice(0, count);
 }
 
 function createBusiness(company) {
-    let h4 = createNode('h4');
+    let h4 = document.createElement('h4');
     h4.innerText = `${company.name}`;
-    append(businessDiv, h4);
+    businessDiv.appendChild(h4);
 }
 
 const businessDiv = document.getElementById('companies');
