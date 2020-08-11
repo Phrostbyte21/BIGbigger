@@ -14,14 +14,22 @@ header {
 .logo {
     display: flex;
     justify-content: center;
-    border: 3px solid white;
-    border-radius: 25px;
+    border-bottom: 3px solid white;
+    border-radius: 3px;
     width: 100px;
-    padding: 10px;
+    height: 35%;
+    padding: 0px 5px 0px 3px;
 }
-.logo:hover {
-    background-color: rgba(255, 255, 255, .1);
-    transition: .5s;
+.bigLogo {
+    margin: 0;
+    font-size: 1.9rem;
+}
+.biggerLogo {
+    margin: 11px 0px 0px 0px;
+    padding-top: 2px;
+    border-top: 3px solid white;
+    border-radius: 3px;
+    line-height: 112%;
 }
 .nav {
     display: flex;
@@ -214,12 +222,12 @@ input[type=number] {
     header {
         font-size: .6rem;
     }
-    .logo {
+    /* .logo {
         border: 2px solid white;
         padding: 5px;
         width: 75px;
         border-radius: 14px;
-    }
+    } */
     .sectionHeader {
         width: 70%;
         margin-left: auto;
@@ -274,13 +282,13 @@ input[type=number] {
         height: 60px;
         padding: 0px 1rem;
     }
-    .logo {
+    /* .logo {
         border: 2px solid white;
         padding: 5px;
         width: 75px;
         border-radius: 14px;
         margin-left: 0px;
-    }
+    } */
     .sectionHeader {
         width: 90%;
         margin-left: auto;
