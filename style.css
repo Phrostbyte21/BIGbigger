@@ -223,11 +223,15 @@ input[type=number] {
         font-size: .6rem;
     }
     .logo {
-        width: 77px;
-        height: 46%;
+        width: 70px;
+        height: 38%;
+    }
+    .bigLogo {
+        font-size: 1.6rem;
     }
     .biggerLogo {
-        line-height: 164%;
+        margin: 9px 0px 0px 0px;
+        line-height: 124%;
     }
     .sectionHeader {
         width: 70%;
@@ -284,11 +288,16 @@ input[type=number] {
         padding: 0px 1rem;
     }
     .logo {
-        height: 62%;
+        height: 46%;
         width: 77%;
     }
+    .bigLogo {
+        font-size: 1.3rem;
+    }
     .biggerLogo {
-        line-height: 150%;
+        margin: 7px 0px 0px 0px;
+        padding-top: 4px;
+        line-height: 65%;
     }
     .sectionHeader {
         width: 90%;
@@ -333,7 +342,7 @@ input[type=number] {
         margin: auto;
         padding: .5rem 0px;
         user-select: none;
-        color: rgb(17,122,180);
+        color: #444;
         width: 90%;
         text-align: center;
         text-decoration: none;
