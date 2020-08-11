@@ -224,10 +224,10 @@ input[type=number] {
     }
     .logo {
         width: 77px;
-        height: 42%;
+        height: 46%;
     }
     .biggerLogo {
-        line-height: 140%;
+        line-height: 164%;
     }
     .sectionHeader {
         width: 70%;
@@ -285,6 +285,7 @@ input[type=number] {
     }
     .logo {
         height: 62%;
+        width: 77%;
     }
     .biggerLogo {
         line-height: 150%;
