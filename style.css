@@ -222,12 +222,13 @@ input[type=number] {
     header {
         font-size: .6rem;
     }
-    /* .logo {
-        border: 2px solid white;
-        padding: 5px;
-        width: 75px;
-        border-radius: 14px;
-    } */
+    .logo {
+        width: 77px;
+        height: 42%;
+    }
+    .biggerLogo {
+        line-height: 140%;
+    }
     .sectionHeader {
         width: 70%;
         margin-left: auto;
@@ -282,13 +283,12 @@ input[type=number] {
         height: 60px;
         padding: 0px 1rem;
     }
-    /* .logo {
-        border: 2px solid white;
-        padding: 5px;
-        width: 75px;
-        border-radius: 14px;
-        margin-left: 0px;
-    } */
+    .logo {
+        height: 62%;
+    }
+    .biggerLogo {
+        line-height: 150%;
+    }
     .sectionHeader {
         width: 90%;
         margin-left: auto;
