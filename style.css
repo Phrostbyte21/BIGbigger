@@ -191,7 +191,7 @@ input[type=number] {
     min-height: 278px;
 }
 .sortableList {
-    padding: 4em 3em;
+    padding: 1em 3em 4em 3em;
     background-color: white;
     color: #444;
     display: flex;
@@ -199,6 +199,13 @@ input[type=number] {
 }
 .liTwo {
     width: 120%;
+}
+.theDream {
+    text-align: center;
+    padding: 1em 1em 1em 1em;
+    margin: 0;
+    background-color: white;
+    color: #444;
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
@@ -329,7 +336,7 @@ input[type=number] {
     }
     .sortableList {
         flex-direction: column;
-        padding: 4em 1em;
+        padding: 1em 1em 4em 1em;
     }
     .liOne {
         display: flex;
