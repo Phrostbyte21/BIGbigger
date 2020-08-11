@@ -64,6 +64,7 @@ a:hover {
 .navLogo {
     display: flex;
     align-items: center;
+    margin-left: 1rem;
 }
 .navItems {
     display: flex;
@@ -222,6 +223,9 @@ input[type=number] {
     header {
         font-size: .6rem;
     }
+    .navLogo {
+        margin-left: .5rem;
+    }
     .logo {
         width: 70px;
         height: 38%;
@@ -286,6 +290,9 @@ input[type=number] {
         justify-content: space-between;
         height: 60px;
         padding: 0px 1rem;
+    }
+    .navLogo {
+        margin-left: .5rem;
     }
     .logo {
         height: 46%;
