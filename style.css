@@ -235,14 +235,15 @@ footer p {
     }
     .logo {
         width: 70px;
-        height: 38%;
+        height: 39%;
     }
     .bigLogo {
         font-size: 1.6rem;
     }
     .biggerLogo {
         margin: 9px 0px 0px 0px;
-        line-height: 124%;
+        line-height: 140%;
+        font-size: 1.25em;
     }
     .sectionHeader {
         width: 70%;
