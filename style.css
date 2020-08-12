@@ -40,9 +40,7 @@ header {
     padding: 20px 20px;
 }
 .sectionHeader {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 15%;
+    margin: 8em 0px 8em 15%;
     width: 50%;
 }
 .sectionHeader h1 {
@@ -215,6 +213,15 @@ input[type=number] {
     margin: 0;
     background-color: white;
     color: #444;
+}
+footer {
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .1);
+}
+footer p {
+    margin: 0;
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
