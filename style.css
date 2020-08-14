@@ -233,8 +233,17 @@ footer p {
     transition: 1s;
 }
 .fab:hover {
-    color: rgba(0, 0, 0, .1);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
     transition: .2s;
+}
+.fab:hover:nth-child(1) {
+    color: rgb(0, 0, 0);
+}
+.fab:hover:nth-child(2) {
+    color: rgb(56, 184, 255);
+}
+.fab:hover:nth-child(3) {
+    color: rgb(0, 119, 181);
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
