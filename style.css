@@ -223,6 +223,7 @@ footer {
 }
 footer p {
     margin: 0;
+    text-align: center;
 }
 .socialIcons {
     display: flex;
@@ -303,6 +304,9 @@ footer p {
     }
     #companies {
         justify-content: center;
+    }
+    a {
+        text-decoration: none;
     }
 }
 
@@ -407,5 +411,8 @@ footer p {
     }
     #companies {
         justify-content: center;
+    }
+    a {
+        text-decoration: underline;
     }
 }
