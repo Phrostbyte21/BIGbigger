@@ -256,7 +256,13 @@ footer a {
 }
 .scrollDown i {
     transform: scaleY(2.5) scaleX(2.5) rotate(90deg);
+    animation: fadeInOut ease 3s infinite;
 }
+@keyframes fadeInOut {
+    0% {opacity:.3;}
+    50% {opacity:1;}
+    100% {opacity:.3;}
+    }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
 /* -------------------------------------------------------- */
