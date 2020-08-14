@@ -245,6 +245,9 @@ footer p {
 .fa-linkedin:hover {
     color: rgb(0, 115, 177);
 }
+footer a {
+    text-decoration: underline;
+}
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
 /* -------------------------------------------------------- */
@@ -305,8 +308,8 @@ footer p {
     #companies {
         justify-content: center;
     }
-    a {
-        text-decoration: none;
+    footer a {
+        text-decoration: underline;
     }
 }
 
@@ -412,7 +415,7 @@ footer p {
     #companies {
         justify-content: center;
     }
-    a {
+    footer a {
         text-decoration: underline;
     }
 }
