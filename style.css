@@ -248,6 +248,15 @@ footer p {
 footer a {
     text-decoration: underline;
 }
+.scrollDown {
+    display: flex;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+.scrollDown i {
+    transform: scaleY(2.5) scaleX(2.5) rotate(90deg);
+}
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
 /* -------------------------------------------------------- */
