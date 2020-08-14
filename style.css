@@ -219,7 +219,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .2);
 }
 footer p {
     margin: 0;
@@ -233,7 +233,6 @@ footer p {
     transition: 1s;
 }
 .fab:hover {
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
     transition: .2s;
 }
 .fa-github:hover {
@@ -243,7 +242,7 @@ footer p {
     color: rgb(56, 184, 255);
 }
 .fa-linkedin:hover {
-    color: rgb(0, 119, 181);
+    color: rgb(0, 115, 177);
 }
 /* -------------------------------------------------------- */
 /* -------------------------Tablet------------------------- */
